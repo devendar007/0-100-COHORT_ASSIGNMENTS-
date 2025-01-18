@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-8 bg-white rounded-lg shadow-lg mt-10">
+        
+        
+        <form action="/status" class="space-y-4" method="post">
+            <div class="flex flex-col items-center">
+                <label for="status" class="text-xl font-semibold text-gray-700 mb-2">Check Kidney Status</label>
+                <input type="text" name="name" id="status" placeholder="Enter Username"
+                    class="px-4 py-2 w-full md:w-1/2 border-2 border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex justify-center mt-4">
+                <button type="submit" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-600 transition duration-300">
+                    Submit
+                </button>
+            </div>
+        </form>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+         
+            <div class="text-center">
+                <img src="/devendar.jpg" alt="Devendar" class="w-full h-auto rounded-lg shadow-md mb-4">
+                <label class="text-lg font-semibold text-gray-700">Username: Devendar</label>
+            </div>
+
+        
+            <div class="text-center">
+                <img src="/deepesh.png" alt="Deepesh" class="w-full h-auto rounded-lg shadow-md mb-4">
+                <label class="text-lg font-semibold text-gray-700">Username: Deepesh</label>
+            </div>
+
+         
+            <div class="text-center">
+                <img src="/itachi.png" loading="lazy" alt="Itachi" class="w-full h-auto rounded-lg shadow-md mb-4">
+                <label class="text-lg font-semibold text-gray-700">Username: Itachi</label>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
